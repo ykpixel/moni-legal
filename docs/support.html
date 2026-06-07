@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Moni — Support</title>
+  <style>
+    :root {
+      --ink: #141F1B;
+      --mut: #5A6864;
+      --green: #0F5F42;
+      --line: #E3DBC4;
+      --bg: #F7F3EA;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, sans-serif;
+      line-height: 1.6;
+    }
+
+    .wrap {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 48px 24px 96px;
+    }
+
+    h1 {
+      font-size: 32px;
+      margin: 0 0 4px;
+    }
+
+    h2 {
+      font-size: 20px;
+      margin: 36px 0 8px;
+    }
+
+    .meta {
+      color: var(--mut);
+      font-size: 14px;
+      margin-bottom: 8px;
+    }
+
+    a {
+      color: var(--green);
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .q {
+      font-weight: 600;
+      margin: 20px 0 4px;
+    }
+
+    .card {
+      background: #EFEADC;
+      border-left: 4px solid var(--green);
+      padding: 16px 18px;
+      border-radius: 8px;
+      margin: 20px 0;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid var(--line);
+      margin: 40px 0;
+    }
+
+    footer {
+      color: var(--mut);
+      font-size: 13px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <h1>Moni Support</h1>
+    <p class="meta">AI-Powered Expense Management</p>
+
+    <div class="card">
+      <strong>Need help?</strong> Email
+      <a href="mailto:support@ykpixel.com">support@ykpixel.com</a>.
+      We aim to reply within a few business days. Please include your device type
+      (iOS / Android) and app version so we can help faster.
+    </div>
+
+    <h2>Frequently asked questions</h2>
+
+    <p class="q">How do I add a transaction?</p>
+    <p>Tap the capture button and either snap a photo of a receipt, record a short
+      voice note describing the expense, or enter it manually. You can also import a
+      bank statement (see below).</p>
+
+    <p class="q">Can I import my bank statement?</p>
+    <p>Yes. Go to <em>Settings → Import Data → Import Bank Statement</em> and pick an
+      OFX/QFX or CSV file exported from your bank. For CSV files you'll map the
+      columns once. Importing is processed entirely on your device — no AI, and your
+      statement never leaves your phone.</p>
+
+    <p class="q">Where is my data stored? Is it private?</p>
+    <p>Your transactions, wallets, and budgets are stored locally on your device.
+      We don't keep them on a server. When you scan a receipt or record a voice note,
+      only that single image/audio clip is sent for AI processing and is not retained
+      afterwards. See our
+      <a href="privacy-policy.html">Privacy Policy</a> for details.
+    </p>
+
+    <p class="q">How do I back up or move my data to a new phone?</p>
+    <p>Use the in-app export options under <em>Settings</em> to export your data,
+      then keep that file somewhere safe (cloud drive, email). Uninstalling the app
+      or wiping the device removes the local data, so export before you switch
+      phones.</p>
+
+    <p class="q">What are the AI capture limits?</p>
+    <p>To keep the app sustainable, AI receipt scans and voice logs are limited to a
+      set number per month. Manual entry and bank-statement import are always
+      unlimited. If you reach the limit, it resets at the start of the next month.</p>
+
+    <p class="q">The app didn't read my receipt / voice correctly.</p>
+    <p>Try a clearer, well-lit photo of the full receipt, or speak the amount and
+      what it was for clearly (e.g. "spent 12 dollars on coffee"). You can always
+      edit any detail before saving, or add the transaction manually.</p>
+
+    <p class="q">How do I delete my data or account?</p>
+    <p>Delete individual items in the app at any time, or remove everything via
+      <em>Settings → Clear Local Data</em>; uninstalling also removes local data. To
+      delete an email account or server-side identifier, email us at the address
+      above.
+    </p>
+
+    <hr />
+    <footer>
+      <p>Contact: <a href="mailto:support@ykpixel.com">support@ykpixel.com</a></p>
+      <p>© 2026 Moni. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+
+</html>

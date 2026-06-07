@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Moni — Privacy Policy</title>
+  <style>
+    :root {
+      --ink: #141F1B;
+      --mut: #5A6864;
+      --green: #0F5F42;
+      --line: #E3DBC4;
+      --bg: #F7F3EA;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, sans-serif;
+      line-height: 1.6;
+    }
+
+    .wrap {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 48px 24px 96px;
+    }
+
+    h1 {
+      font-size: 32px;
+      margin: 0 0 4px;
+    }
+
+    h2 {
+      font-size: 20px;
+      margin: 36px 0 8px;
+    }
+
+    .meta {
+      color: var(--mut);
+      font-size: 14px;
+      margin-bottom: 8px;
+    }
+
+    a {
+      color: var(--green);
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    code {
+      background: #EFEADC;
+      padding: 1px 6px;
+      border-radius: 4px;
+      font-size: 90%;
+    }
+
+    .note {
+      background: #EFEADC;
+      border-left: 4px solid var(--green);
+      padding: 12px 16px;
+      border-radius: 8px;
+      margin: 20px 0;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid var(--line);
+      margin: 40px 0;
+    }
+
+    footer {
+      color: var(--mut);
+      font-size: 13px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <h1>Privacy Policy</h1>
+    <p class="meta">Moni — AI-Powered Expense Management</p>
+    <p class="meta">Effective date: 7 June 2026 &nbsp;·&nbsp; Last updated: 7 June 2026</p>
+
+    <div class="note">
+      <strong>The short version:</strong> Moni stores your financial data
+      <strong>on your device</strong>. We don't run servers that hold your
+      transactions, and we never sell your data. The only time information leaves
+      your phone is when <em>you</em> choose to scan a receipt or record a voice
+      note — that single image or audio clip is sent for AI processing and is not
+      stored afterwards.
+    </div>
+
+    <h2>1. Who we are</h2>
+    <p>Moni ("the app", "we", "us") is a personal expense-management application.
+      For any privacy questions, contact us at
+      <a href="mailto:support@ykpixel.com">support@ykpixel.com</a>.
+    </p>
+
+    <h2>2. Data stored on your device</h2>
+    <p>By design, Moni is <strong>offline-first</strong>. The following is stored
+      locally on your device and is not transmitted to us:</p>
+    <ul>
+      <li>Transactions (amounts, dates, merchants, categories, notes, tags).</li>
+      <li>Wallets, budgets, and recurring-transaction settings.</li>
+      <li>App preferences (currency, etc.).</li>
+      <li>Receipt photos you capture are saved to your device's photo gallery.</li>
+    </ul>
+    <p>If you uninstall the app or wipe your device, this local data is removed by
+      the operating system. Use the in-app export feature to keep your own backup.</p>
+
+    <h2>3. Device permissions</h2>
+    <ul>
+      <li><strong>Camera</strong> — only to photograph receipts you choose to scan.</li>
+      <li><strong>Microphone</strong> — only while you are recording a voice entry.</li>
+      <li><strong>Photos / storage</strong> — to save receipt images and to import
+        statement files you select.</li>
+      <li><strong>Notifications</strong> — to alert you when a budget threshold is reached.</li>
+    </ul>
+    <p>We do not access your camera, microphone, photos, or files in the
+      background or without an explicit action by you.</p>
+
+    <h2>4. AI processing (receipt &amp; voice capture)</h2>
+    <p>When you scan a receipt or record a voice note, that specific image or audio
+      clip is sent — over an encrypted connection, through our processing service —
+      to <strong>OpenAI</strong>, which extracts the transaction details (merchant,
+      amount, category, etc.) and returns them to your device.</p>
+    <ul>
+      <li>Only the media you explicitly capture for this purpose is sent.</li>
+      <li>The extracted result is stored locally on your device, under your control.</li>
+      <li>We do not retain the image or audio on our servers after processing.</li>
+      <li>OpenAI processes the data as a service provider; per OpenAI's API policy,
+        API data is not used to train their models.</li>
+    </ul>
+    <p>If you only ever enter transactions manually or import statement files, no
+      data is sent for AI processing. Bank-statement import (OFX/QFX/CSV) is parsed
+      entirely on your device with no AI and no network call.</p>
+
+    <h2>5. Authentication and processing infrastructure</h2>
+    <p>We use <strong>Supabase</strong> to (a) issue an anonymous account
+      identifier so the app can function, and (b) operate the secure function that
+      relays your capture to OpenAI. This anonymous identifier is not linked to your
+      name and is used to apply fair-use limits on AI processing. If you choose to
+      create an account with an email address, that email is stored to let you sign
+      back in.</p>
+
+    <h2>6. What we do NOT do</h2>
+    <ul>
+      <li>We do not sell or rent your personal data to anyone.</li>
+      <li>We do not show third-party advertising.</li>
+      <li>We do not connect to your bank or access your bank credentials.</li>
+      <li>We do not track your location.</li>
+    </ul>
+
+    <h2>7. Data retention &amp; deletion</h2>
+    <p>Your financial data lives on your device; you can delete any item, or all of
+      it, at any time from within the app, and uninstalling removes it entirely. To
+      delete an account you created (email) or any associated server-side identifier,
+      email <a href="mailto:support@ykpixel.com">support@ykpixel.com</a> and we
+      will remove it.</p>
+
+    <h2>8. Children</h2>
+    <p>Moni is not directed to children under 13 (or the equivalent minimum age in
+      your jurisdiction), and we do not knowingly collect data from them.</p>
+
+    <h2>9. Your rights</h2>
+    <p>Depending on where you live (e.g. the EU/EEA under GDPR, or California under
+      CCPA), you may have rights to access, correct, or delete your personal data.
+      Because most of your data is stored only on your device, you can exercise most
+      of these rights directly in the app. For anything else, contact us.</p>
+
+    <h2>10. Changes to this policy</h2>
+    <p>We may update this policy from time to time. Material changes will be
+      reflected by updating the "Last updated" date above and, where appropriate,
+      through an in-app notice.</p>
+
+    <hr />
+    <footer>
+      <p>Contact: <a href="mailto:support@ykpixel.com">support@ykpixel.com</a></p>
+      <p>© 2026 Moni. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+
+</html>
